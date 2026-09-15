@@ -1,9 +1,5 @@
-from fastapi import FastAPI
+import pandas as pd 
 
-# 1. Initialize the framework instance
-app = FastAPI(title="Data Science API Server")
+df = pd.read_csv("C:\\Users\\a\\OneDrive\\Desktop\\Predictive-Analytics-for-Customer-Churn\\notebooks\\EDA_data.csv")
 
-# 2. Define a GET route (Reading data)
-@app.get("/")
-def home():
-    return {"status": "Active", "message": "Welcome to the Data Science Production Hub"}
+df.head(4)

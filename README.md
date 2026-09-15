@@ -1,3 +1,14 @@
-#  Predictive-Analytics-for-Customer-Churn
+#  Predictive-Analytics-for-Customer-Chur
 
-# 
+
+# EDA 
+ ## Data information 
+ - dataset has (243787, 21) rows and columns.
+ - 
+
+
+
+
+
+
+
