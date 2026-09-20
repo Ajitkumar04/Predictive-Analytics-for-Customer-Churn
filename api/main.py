@@ -1,5 +1,14 @@
-import pandas as pd 
+from __future__ import annotations
 
-df = pd.read_csv("C:\\Users\\a\\OneDrive\\Desktop\\Predictive-Analytics-for-Customer-Churn\\notebooks\\EDA_data.csv")
+from fastapi import FastAPI
 
-df.head(4)
+from api.routes.prediction import router
+
+app = FastAPI(title="Customer Churn Prediction API", version="1.0.0")
+app.include_router(router)
+
+
+@app.get("/health")
+def health_check() -> dict[str, object]:
+    """Return the API health status and whether a model artifact is available."""
+    return {"status": "healthy", "model_loaded": False}

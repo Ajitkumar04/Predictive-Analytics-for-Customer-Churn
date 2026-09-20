@@ -1,8 +1,12 @@
 kagglehub
-numpay 
+numpy
 pandas
 matplotlib
 seaborn
 scikit-learn
 imblearn
-sklern
+mlflow
+streamlit
+websockets<17,>=12.0.0
+
+optuna
